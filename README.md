@@ -28,8 +28,7 @@ Then, depending on your toolchain:
 
     # macOS + Xcode
     cmake .. -GXcode
-    cmake --build . --config Release
-    cmake --build . --config Release --target Install
+    cmake --build . --config Release -DSC_PATH=/path/to/supercollider
 
     # Windows + VS 2017
     cmake .. -G"Visual Studio 15 2017 Win64"

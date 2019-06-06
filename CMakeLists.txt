@@ -57,8 +57,38 @@ option(STRICT "Use strict warning flags" OFF)
 # Begin target VCO
 
 set(VCO_cpp_files
+    plugins/VCO/common.hpp
+    plugins/VCO/logger.hpp
+    plugins/VCO/math.hpp
+    plugins/VCO/rack.hpp
+    plugins/VCO/random.cpp
+    plugins/VCO/random.hpp
     plugins/VCO/VCO.cpp
     plugins/VCO/VCO.hpp
+    plugins/VCO/VoltageControlledOscillator.hpp
+    plugins/VCO/dsp/common.hpp
+    plugins/VCO/dsp/digital.hpp
+    plugins/VCO/dsp/fft.hpp
+    plugins/VCO/dsp/filter.hpp
+    plugins/VCO/dsp/fir.hpp
+    plugins/VCO/dsp/minblep.hpp
+    plugins/VCO/dsp/ode.hpp
+    plugins/VCO/dsp/resampler.hpp
+    plugins/VCO/dsp/ringbuffer.hpp
+    plugins/VCO/dsp/window.hpp
+    plugins/VCO/dsp/pffft/fftpack.c
+    plugins/VCO/dsp/pffft/fftpack.h
+    plugins/VCO/dsp/pffft/pffft.c
+    plugins/VCO/dsp/pffft/pffft.h
+    plugins/VCO/dsp/speex/speex_buffer.h
+    plugins/VCO/dsp/speex/speex_echo.h
+    plugins/VCO/dsp/speex/speex_jitter.h
+    plugins/VCO/dsp/speex/speex_preprocess.h
+    plugins/VCO/dsp/speex/speex_resampler.h
+    plugins/VCO/dsp/speex/speexdsp_types.h
+    plugins/VCO/simd/functions.hpp
+    plugins/VCO/simd/sse_mathfun.h
+    plugins/VCO/simd/vector.hpp
 )
 set(VCO_sc_files
     plugins/VCO/VCO.sc
