@@ -1,0 +1,1 @@
+python /Users/Roomba/supercollider/tools/cmake_gen/generate_server_plugin_cmake.py -P "VCO" -p "plugins/VCO" -a "Eric Sluyter"
